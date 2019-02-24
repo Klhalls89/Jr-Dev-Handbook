@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+/*  background-image: url(pinkpaper.jpg);
+  object-fit: cover;*/
+  background-color: mediumvioletred;
+}
+
+.logo {
+  padding-top: 20px;
+  font-family: $logoFont;
+  font-size: 60px;
+  text-align: center;
+}
