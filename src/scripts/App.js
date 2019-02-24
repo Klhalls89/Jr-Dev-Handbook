@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import Card from './Card'
+import React, { Component } from "react";
+import Card from "./Card";
+import handbook from "../data/handbook";
 
 class App extends Component {
  constructor(){
@@ -8,6 +9,13 @@ class App extends Component {
       questions: []
     }
   }
+
+  componentDidMount() {
+    this.setState({
+      questions: handbook
+    })  
+  }
+
   render() {
     return (
     <div>
@@ -16,7 +24,7 @@ class App extends Component {
         <h2>Instructions</h2>
       </section>
       <section className="card-section">
-        <Card />
+        <Card questions={this.state.questions}/>
         <p>Correct</p>
       </section>
     </div>

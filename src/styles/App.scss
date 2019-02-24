@@ -3,13 +3,19 @@
 }
 
 body {
-/*  background-image: url(pinkpaper.jpg);
+/*  background-image: url('./pinkpaper.jpg');
   object-fit: cover;*/
   background-color: mediumvioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $font;
+  font-size: 30px;
 }
 
 .logo {
-  padding-top: 20px;
+  padding: 20px;
   font-family: $logoFont;
   font-size: 60px;
   text-align: center;

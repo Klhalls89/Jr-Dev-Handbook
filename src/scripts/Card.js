@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+
 
 class Card extends Component {
  constructor(){
@@ -8,9 +9,15 @@ class Card extends Component {
     }
   }
   render() {
+   let questions = this.props.questions.handbook 
+   console.log(questions)
     return (
     <div className="card-div">
-      <p>Hello</p>
+      <h3>question</h3>
+      <p>a</p>
+      <p>b</p>
+      <p>c</p>
+      <p>d</p>
     </div>
     )
   }
