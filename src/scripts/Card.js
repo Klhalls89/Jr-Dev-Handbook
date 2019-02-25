@@ -13,14 +13,16 @@ class Card extends Component {
     let answer2;
     let answer3;
     let answer4;
+
     if(this.props.currentQuestion){
     displayedQueston = this.props.currentQuestion.question
     displayedAnswers = this.props.currentQuestion.answers
-    answer1 = displayedAnswers[0];
-    answer2 = displayedAnswers[1];
-    answer3 = displayedAnswers[2];
-    answer4 = displayedAnswers[3];
+    answer1 = displayedAnswers[0].value;
+    answer2 = displayedAnswers[1].value;
+    answer3 = displayedAnswers[2].value;
+    answer4 = displayedAnswers[3].value;
     }
+    
     return (
     <div className="card-div">
       <h3>{displayedQueston}</h3>
