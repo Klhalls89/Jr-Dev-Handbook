@@ -270,6 +270,4 @@ let handbook = [
   }
 ]
 
-module.exports = {
-    handbook  
-}
+export default handbook;  

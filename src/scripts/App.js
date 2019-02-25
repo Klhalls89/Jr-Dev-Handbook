@@ -17,15 +17,28 @@ class App extends Component {
   }
 
   render() {
+    let currentQuestion;
+    if (this.state.questions.length > 0) {
+      currentQuestion = this.state.questions[0]
+    }
     return (
-    <div>
-      <section className="header">
+    <div className="quiz-page">
+      <section className="header-sect">
         <h1 className="logo">The Jr. Dev Handbook</h1>
-        <h2>Instructions</h2>
       </section>
-      <section className="card-section">
-        <Card questions={this.state.questions}/>
-        <p>Correct</p>
+      <section className="instructions-sect">
+        <h2>Instructions:</h2>
+        <p>Welcome to the junior developer's handbook. 
+        It's a series of flash cards with terms and ideas you should know.
+        Anything you get right will be taken out of your flashcard deck.
+        Anything you get wrong will be asked again. Start studying!</p>
+      </section>
+      <section className="card-sect">
+        <Card currentQuestion={currentQuestion}/>
+      </section>
+      <section className="results-sect">
+        <h2>Results:</h2>
+        <p className="results">Correct</p>
       </section>
     </div>
     )

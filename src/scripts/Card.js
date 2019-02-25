@@ -4,20 +4,30 @@ import React, { Component } from "react";
 class Card extends Component {
  constructor(){
   super();
-    this.state = {
-      currentCard: {}
-    }
   }
+
   render() {
-   let questions = this.props.questions.handbook 
-   console.log(questions)
+    let displayedQueston;
+    let displayedAnswers;
+    let answer1;
+    let answer2;
+    let answer3;
+    let answer4;
+    if(this.props.currentQuestion){
+    displayedQueston = this.props.currentQuestion.question
+    displayedAnswers = this.props.currentQuestion.answers
+    answer1 = displayedAnswers[0];
+    answer2 = displayedAnswers[1];
+    answer3 = displayedAnswers[2];
+    answer4 = displayedAnswers[3];
+    }
     return (
     <div className="card-div">
-      <h3>question</h3>
-      <p>a</p>
-      <p>b</p>
-      <p>c</p>
-      <p>d</p>
+      <h3>{displayedQueston}</h3>
+      <p className="answer">{answer1}</p>
+      <p className="answer">{answer2}</p>
+      <p className="answer">{answer3}</p>
+      <p className="answer">{answer4}</p>
     </div>
     )
   }
