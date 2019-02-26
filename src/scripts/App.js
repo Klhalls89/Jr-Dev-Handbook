@@ -80,7 +80,10 @@ class App extends Component {
         Anything you get wrong will be asked again. Start studying!</p>
       </section>
       <section className="card-sect">
-       { currentQuestion && <Card invalidAnswer={this.invalidAnswer} validAnswer={this.validAnswer} currentQuestion={currentQuestion}/>}
+       { currentQuestion && 
+        <Card invalidAnswer={this.invalidAnswer} 
+               validAnswer={this.validAnswer} 
+              currentQuestion={currentQuestion}/>}
       </section>
       <section className="results-sect">
         <h2>Results:</h2>

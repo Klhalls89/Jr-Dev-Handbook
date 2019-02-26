@@ -38,8 +38,6 @@ class Card extends Component {
     this.shuffleAnswers(answersToShuffle)
     let answersText = this.getAnswers(answersToShuffle)
     const allAnswers = this.populateAnswers(answersText)
-
-
     return (
     <div className="card-div">
       <h3>{displayedQueston}</h3>

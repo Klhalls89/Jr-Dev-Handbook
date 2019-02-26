@@ -23,8 +23,10 @@ describe('Card testing', () => {
                             currentQuestion={mockQuestion}/>);
   })
 
-  it("should match the snapshot", () => {
+  it("render should match the snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should ')
 
 })
