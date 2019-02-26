@@ -11,21 +11,21 @@ class App extends Component {
     }
   }
 
-  componentDidMount = () => {
-    if (!localStorage.getItem("incompleteCards")) {
+  componentDidMount() {
+    if (!localStorage.getItem("incompleteQuestions")) {
       this.fetchData() 
   } else {
     this.setState({
-      questions: JSON.parse(localStorage.getItem("incompleteCards"))
+      questions: JSON.parse(localStorage.getItem("incompleteQuestions"))
       })
     }    
   }
 
-  fetchData() {
+  fetchData = () => {
     fetch('http://memoize-datasets.herokuapp.com/api/v1/handbook')
       .then(response => response.json())
       .then(results => {
-        localStorage.setItem("incompleteCards", JSON.stringify(results.handbook));
+        localStorage.setItem("incompleteQuestions", JSON.stringify(results.handbook));
         this.setState({
           questions: results.handbook
         })
@@ -35,23 +35,32 @@ class App extends Component {
       }) 
   }
 
-  useValidatedAnswer(ans) {
-    if (ans === 'correct') {
-      //change results to you got this
-      //shift current question out of the array
-      //after set state save question to local storage
+  validAnswer = () => {
+    const currentQuestions = [...this.state.questions]
+    currentQuestions.shift()
+      this.setState({
+        questions: currentQuestions,
+        results: 'You got this'
+      })
+      if (currentQuestions.length === 0){
+        localStorage.removeItem('incompleteQuestions')
+        this.setState({
+        results: 'Congratulations Junior Developer!'
+      })
     } else {
-      invalidAnswer()
+        localStorage.setItem("incompleteQuestions", JSON.stringify(currentQuestions))
     }
-  
   }
 
-  invalidAnswer(){
-    //change results to try harder
-    //capture shifted question
-    //pop it to the end of the questions
-    //after set state save question to local storage
-
+  invalidAnswer = () => {
+    const currentQuestions = [...this.state.questions]
+    const retryQuestion = currentQuestions.shift()
+    currentQuestions.push(retryQuestion)
+    localStorage.setItem("incompleteQuestions", JSON.stringify(currentQuestions))
+      this.setState({
+      questions: currentQuestions,
+      results: 'You can do better'
+    })
   }
 
   render() {
@@ -72,7 +81,7 @@ class App extends Component {
         Anything you get wrong will be asked again. Start studying!</p>
       </section>
       <section className="card-sect">
-       { currentQuestion && <Card useValidatedAnswer={this.useValidatedAnswer} currentQuestion={currentQuestion}/>}
+       { currentQuestion && <Card invalidAnswer={this.invalidAnswer} validAnswer={this.validAnswer} currentQuestion={currentQuestion}/>}
       </section>
       <section className="results-sect">
         <h2>Results:</h2>

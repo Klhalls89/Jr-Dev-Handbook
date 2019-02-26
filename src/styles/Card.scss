@@ -8,3 +8,12 @@
   border-radius: 2px;
 }
 
+.answers-on-card {
+  padding: .5%;
+  &:hover {
+    color: teal;
+    cursor: pointer;
+  }
+}
+
+

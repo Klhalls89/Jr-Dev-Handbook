@@ -4,9 +4,6 @@ import React, { Component } from "react";
 class Card extends Component {
  constructor(){
   super();
-    this.state = {
-      correctAnswer:''
-    }
   }
 
  shuffleAnswers(arr) {
@@ -22,17 +19,17 @@ class Card extends Component {
     })
   }
 
-  populateAnswers(arr) {
+  populateAnswers = (arr) => {
     return arr.map((answer) => {
-      return (<p onClick={this.validateAnswer}>{answer}</p>)
+      return (<p className="answers-on-card" onClick={this.validateAnswer}>{answer}</p>)
     })
   }
 
   validateAnswer = (e) => {
    if(e.target.innerText === this.props.currentQuestion.answers[0].Correct){
-    this.props.useValidatedAnswer('correct')
+    this.props.validAnswer()
    } else {
-    this.props.useValidatedAnswer('incorrect')
+    this.props.invalidAnswer()
    }
   }
 

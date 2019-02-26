@@ -13,7 +13,7 @@ body {
 .quiz-page {
   display: grid;
   grid-gap: 3%;
-  grid-template-rows: 1fr 1fr 2fr 1fr;
+  grid-template-rows: .5fr 1fr 2fr 1fr;
 }
 
 .logo {
