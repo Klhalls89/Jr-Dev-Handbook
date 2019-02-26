@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Card from "./Card";
-// import handbook from "../data/handbook";
 
 class App extends Component {
  constructor(){

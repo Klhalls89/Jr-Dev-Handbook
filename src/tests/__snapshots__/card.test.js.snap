@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card testing should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    currentQuestion={
+      Object {
+        "answers": Array [
+          "hypertext markup language",
+          "false",
+          "incorrect",
+          "untrue",
+        ],
+        "question": "What does html mean",
+      }
+    }
+    invalidAnswer={[MockFunction]}
+    validAnswer={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3>
+          What does html mean
+        </h3>,
+        Array [
+          <p
+            className="answers-on-card"
+            onClick={[Function]}
+          >
+            u
+          </p>,
+          <p
+            className="answers-on-card"
+            onClick={[Function]}
+          >
+            i
+          </p>,
+          <p
+            className="answers-on-card"
+            onClick={[Function]}
+          >
+            h
+          </p>,
+          <p
+            className="answers-on-card"
+            onClick={[Function]}
+          >
+            f
+          </p>,
+        ],
+      ],
+      "className": "card-div",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "What does html mean",
+        },
+        "ref": null,
+        "rendered": "What does html mean",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "u",
+          "className": "answers-on-card",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "u",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "i",
+          "className": "answers-on-card",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "i",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "h",
+          "className": "answers-on-card",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "h",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "f",
+          "className": "answers-on-card",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "f",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            What does html mean
+          </h3>,
+          Array [
+            <p
+              className="answers-on-card"
+              onClick={[Function]}
+            >
+              u
+            </p>,
+            <p
+              className="answers-on-card"
+              onClick={[Function]}
+            >
+              i
+            </p>,
+            <p
+              className="answers-on-card"
+              onClick={[Function]}
+            >
+              h
+            </p>,
+            <p
+              className="answers-on-card"
+              onClick={[Function]}
+            >
+              f
+            </p>,
+          ],
+        ],
+        "className": "card-div",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "What does html mean",
+          },
+          "ref": null,
+          "rendered": "What does html mean",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "u",
+            "className": "answers-on-card",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "u",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "i",
+            "className": "answers-on-card",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "i",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "h",
+            "className": "answers-on-card",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "h",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "f",
+            "className": "answers-on-card",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "f",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

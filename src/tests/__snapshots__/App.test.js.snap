@@ -1,3 +1,533 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App testing should match the snapshot with mock state 1`] = `undefined`;
+exports[`App testing should match the snapshot with mock state 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <section
+          className="header-sect"
+        >
+          <h1
+            className="logo"
+          >
+            The Jr. Dev Handbook
+          </h1>
+        </section>,
+        <section
+          className="instructions-sect"
+        >
+          <h2>
+            Instructions:
+          </h2>
+          <p>
+            Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!
+          </p>
+        </section>,
+        <section
+          className="card-sect"
+        >
+          <Card
+            currentQuestion={
+              Object {
+                "answers": Array [
+                  "hypertext markup language",
+                  "false",
+                  "incorrect",
+                  "untrue",
+                ],
+                "question": "What does html mean",
+              }
+            }
+            invalidAnswer={[Function]}
+            validAnswer={[Function]}
+          />
+        </section>,
+        <section
+          className="results-sect"
+        >
+          <h2>
+            Results:
+          </h2>
+          <p
+            className="results"
+          >
+            
+          </p>
+          <a
+            href="http://frontend.turing.io/lessons/"
+          >
+            Learn more about becoming a junior developer
+          </a>
+        </section>,
+      ],
+      "className": "quiz-page",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <h1
+            className="logo"
+          >
+            The Jr. Dev Handbook
+          </h1>,
+          "className": "header-sect",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "The Jr. Dev Handbook",
+            "className": "logo",
+          },
+          "ref": null,
+          "rendered": "The Jr. Dev Handbook",
+          "type": "h1",
+        },
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Instructions:
+            </h2>,
+            <p>
+              Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!
+            </p>,
+          ],
+          "className": "instructions-sect",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Instructions:",
+            },
+            "ref": null,
+            "rendered": "Instructions:",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!",
+            },
+            "ref": null,
+            "rendered": "Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!",
+            "type": "p",
+          },
+        ],
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Card
+            currentQuestion={
+              Object {
+                "answers": Array [
+                  "hypertext markup language",
+                  "false",
+                  "incorrect",
+                  "untrue",
+                ],
+                "question": "What does html mean",
+              }
+            }
+            invalidAnswer={[Function]}
+            validAnswer={[Function]}
+          />,
+          "className": "card-sect",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "currentQuestion": Object {
+              "answers": Array [
+                "hypertext markup language",
+                "false",
+                "incorrect",
+                "untrue",
+              ],
+              "question": "What does html mean",
+            },
+            "invalidAnswer": [Function],
+            "validAnswer": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Results:
+            </h2>,
+            <p
+              className="results"
+            >
+              
+            </p>,
+            <a
+              href="http://frontend.turing.io/lessons/"
+            >
+              Learn more about becoming a junior developer
+            </a>,
+          ],
+          "className": "results-sect",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Results:",
+            },
+            "ref": null,
+            "rendered": "Results:",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+              "className": "results",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Learn more about becoming a junior developer",
+              "href": "http://frontend.turing.io/lessons/",
+            },
+            "ref": null,
+            "rendered": "Learn more about becoming a junior developer",
+            "type": "a",
+          },
+        ],
+        "type": "section",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <section
+            className="header-sect"
+          >
+            <h1
+              className="logo"
+            >
+              The Jr. Dev Handbook
+            </h1>
+          </section>,
+          <section
+            className="instructions-sect"
+          >
+            <h2>
+              Instructions:
+            </h2>
+            <p>
+              Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!
+            </p>
+          </section>,
+          <section
+            className="card-sect"
+          >
+            <Card
+              currentQuestion={
+                Object {
+                  "answers": Array [
+                    "hypertext markup language",
+                    "false",
+                    "incorrect",
+                    "untrue",
+                  ],
+                  "question": "What does html mean",
+                }
+              }
+              invalidAnswer={[Function]}
+              validAnswer={[Function]}
+            />
+          </section>,
+          <section
+            className="results-sect"
+          >
+            <h2>
+              Results:
+            </h2>
+            <p
+              className="results"
+            >
+              
+            </p>
+            <a
+              href="http://frontend.turing.io/lessons/"
+            >
+              Learn more about becoming a junior developer
+            </a>
+          </section>,
+        ],
+        "className": "quiz-page",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1
+              className="logo"
+            >
+              The Jr. Dev Handbook
+            </h1>,
+            "className": "header-sect",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "The Jr. Dev Handbook",
+              "className": "logo",
+            },
+            "ref": null,
+            "rendered": "The Jr. Dev Handbook",
+            "type": "h1",
+          },
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Instructions:
+              </h2>,
+              <p>
+                Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!
+              </p>,
+            ],
+            "className": "instructions-sect",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Instructions:",
+              },
+              "ref": null,
+              "rendered": "Instructions:",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!",
+              },
+              "ref": null,
+              "rendered": "Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!",
+              "type": "p",
+            },
+          ],
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Card
+              currentQuestion={
+                Object {
+                  "answers": Array [
+                    "hypertext markup language",
+                    "false",
+                    "incorrect",
+                    "untrue",
+                  ],
+                  "question": "What does html mean",
+                }
+              }
+              invalidAnswer={[Function]}
+              validAnswer={[Function]}
+            />,
+            "className": "card-sect",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "currentQuestion": Object {
+                "answers": Array [
+                  "hypertext markup language",
+                  "false",
+                  "incorrect",
+                  "untrue",
+                ],
+                "question": "What does html mean",
+              },
+              "invalidAnswer": [Function],
+              "validAnswer": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Results:
+              </h2>,
+              <p
+                className="results"
+              >
+                
+              </p>,
+              <a
+                href="http://frontend.turing.io/lessons/"
+              >
+                Learn more about becoming a junior developer
+              </a>,
+            ],
+            "className": "results-sect",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Results:",
+              },
+              "ref": null,
+              "rendered": "Results:",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "",
+                "className": "results",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Learn more about becoming a junior developer",
+                "href": "http://frontend.turing.io/lessons/",
+              },
+              "ref": null,
+              "rendered": "Learn more about becoming a junior developer",
+              "type": "a",
+            },
+          ],
+          "type": "section",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
