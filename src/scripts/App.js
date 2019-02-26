@@ -86,6 +86,7 @@ class App extends Component {
       <section className="results-sect">
         <h2>Results:</h2>
         <p className="results">{this.state.results}</p>
+        <a href="http://frontend.turing.io/lessons/">Learn more about becoming a junior developer</a>
       </section>
     </div>
     )

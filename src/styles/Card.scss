@@ -1,5 +1,4 @@
 .card-div {
- /*background-image: url("./bubble.png");*/
   background-color: #fff;
   padding: 5%;
   height: 95%;
@@ -13,6 +12,22 @@
   &:hover {
     color: teal;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .answers-on-card {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .card-div {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+   .card-div {
+    height: 80%;
   }
 }
 

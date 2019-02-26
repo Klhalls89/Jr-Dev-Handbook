@@ -3,8 +3,6 @@
 }
 
 body {
-/*  background-image: url('./pinkpaper.jpg');
-  object-fit: cover;*/
   background-color: mediumvioletred;
   font-family: $font;
   font-size: 30px;
@@ -31,4 +29,29 @@ body {
 .card-sect,
 .results-sect {
   padding: 0 1%;
+}
+
+@media only screen and (max-width: 870px) {
+  body {
+    p {
+      font-size: 20px;
+    }
+  }
+  
+  h3 {
+    font-size: 30px
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h2,
+  h3,
+  a {
+    font-size: 25px
+  }
+}
+@media only screen and (max-width: 400px) {
+  .quiz-page {
+    grid-template-rows: .5fr 1fr 1.5fr 1fr;
+}
 }
