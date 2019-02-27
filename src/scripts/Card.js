@@ -12,9 +12,9 @@ class Card extends Component {
    }
   }
 
-  getAnswers(arr) {
-    return arr.map((item) => {
-      return Object.values(item)[0]
+  getAnswers(shufAns) {
+    return shufAns.map((ans) => {
+      return Object.values(ans)[0]
     })
   }
 
