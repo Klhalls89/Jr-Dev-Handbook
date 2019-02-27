@@ -4,19 +4,17 @@ import Card from "../scripts/Card";
 import { shallow } from 'enzyme';
 
 const mockQuestion = 
-    { question: 'What does html mean',
-      answers: [  {ture: 'html'},
-                  {false: 'css'}
+    { question: "What does html mean",
+      answers: [  {ture: "html"},
+                  {false: "css"}
                 ]
     }
-
-const mockAnswers = [{ture: 'html'},{false: 'css'}]
-const mockAnswerString = ['html','css']
-
+const mockAnswers = [{ture: "html"},{false: "css"}]
+const mockAnswerString = ["html","css"]
 const validAnswermock = jest.fn()
 const invalidAnswerMock = jest.fn()
 
-describe('Card testing', () => {
+describe("Card testing", () => {
   let wrapper;
   
   beforeEach(() => {
@@ -33,16 +31,16 @@ describe('Card testing', () => {
 
     it("should get array of the question stings", () => {
       const getAnswersResult = wrapper.instance().getAnswers(mockAnswers)
-      expect(getAnswersResult).toEqual(['html','css'])  
+      expect(getAnswersResult).toEqual(["html","css"])  
     })
 
   })
 
   describe("populateAnswers", () => {
 
-  it("should produce p tags from an array", () => {
-  expect(wrapper.find('.answers-on-card')).toHaveLength(2);
-  })
+    it("should produce p tags from an array", () => {
+      expect(wrapper.find(".answers-on-card")).toHaveLength(2);
+    })
 
   })
 

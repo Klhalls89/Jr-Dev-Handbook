@@ -14,12 +14,6 @@ body {
   grid-template-rows: .5fr 1fr 2fr 1fr;
 }
 
-.logo {
-  font-family: $logoFont;
-  font-size: 2em;
-  text-align: center;
-}
-
 .header-sect {
   margin-top: 2%;
 }
@@ -29,6 +23,12 @@ body {
 .card-sect,
 .results-sect {
   padding: 0 1%;
+}
+
+.logo {
+  font-family: $logoFont;
+  font-size: 2em;
+  text-align: center;
 }
 
 @media only screen and (max-width: 870px) {
@@ -50,8 +50,9 @@ body {
     font-size: 25px
   }
 }
+
 @media only screen and (max-width: 400px) {
   .quiz-page {
     grid-template-rows: .5fr 1fr 1.5fr 1fr;
-}
+  }
 }

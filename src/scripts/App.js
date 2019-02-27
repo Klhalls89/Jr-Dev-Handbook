@@ -6,7 +6,7 @@ class App extends Component {
   super();
     this.state = {
       questions: [],
-      results: ''
+      results: ""
     }
   }
 
@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   fetchData = () => {
-    fetch('http://memoize-datasets.herokuapp.com/api/v1/handbook')
+    fetch("http://memoize-datasets.herokuapp.com/api/v1/handbook")
       .then(response => response.json())
       .then(results => {
         localStorage.setItem("incompleteQuestions", JSON.stringify(results.handbook));
@@ -39,12 +39,12 @@ class App extends Component {
     currentQuestions.shift()
       this.setState({
         questions: currentQuestions,
-        results: 'You got this'
+        results: "You got this"
       })
       if (currentQuestions.length === 0){
-        localStorage.removeItem('incompleteQuestions')
+        localStorage.removeItem("incompleteQuestions")
         this.setState({
-        results: 'Congratulations Junior Developer!'
+        results: "Congratulations Junior Developer!"
       })
     } else {
         localStorage.setItem("incompleteQuestions", JSON.stringify(currentQuestions))
@@ -58,7 +58,7 @@ class App extends Component {
     localStorage.setItem("incompleteQuestions", JSON.stringify(currentQuestions))
       this.setState({
       questions: currentQuestions,
-      results: 'You can do better'
+      results: "You can do better"
     })
   }
 
@@ -74,8 +74,8 @@ class App extends Component {
       </section>
       <section className="instructions-sect">
         <h2>Instructions:</h2>
-        <p>Welcome to the junior developer's handbook. 
-        It's a series of flash cards with terms and ideas you should know.
+        <p>Welcome to the junior developers handbook. 
+        It is a series of flash cards with terms and ideas you should know.
         Anything you get right will be taken out of your flashcard deck.
         Anything you get wrong will be asked again. Start studying!</p>
       </section>

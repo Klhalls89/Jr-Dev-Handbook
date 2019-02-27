@@ -4,23 +4,24 @@ import App from "../scripts/App";
 import { shallow } from 'enzyme';
 
 let mockData = [
-    { question: 'What does html mean',
-      answers: [ 'hypertext markup language',
-                  'false',
-                  'incorrect',
-                  'untrue'
+    { question: "What does html mean",
+      answers: [ "hypertext markup language",
+                  "false",
+                  "incorrect",
+                  "untrue"
                 ]
     },
-    { question: 'What does css mean',
-      answers: [ 'cascading sytle sheet',
-                  'false',
-                  'incorrect',
-                  'untrue'
+    
+    { question: "What does css mean",
+      answers: [ "cascading sytle sheet",
+                  "false",
+                  "incorrect",
+                  "untrue"
                 ]
     }
 ]
 
-describe('App testing', () => {
+describe("App testing", () => {
   let wrapper;
   
   beforeEach(() => {
@@ -41,41 +42,41 @@ describe('App testing', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  describe('valid answer', () => {
+  describe("valid answer", () => {
 
-    it('should shift the first question out of question array', () => {
-      expect(wrapper.state('questions')).toHaveLength(2)
+    it("should shift the first question out of question array", () => {
+      expect(wrapper.state("questions")).toHaveLength(2)
       wrapper.instance().validAnswer()
-      expect(wrapper.state('questions')).toHaveLength(1)
+      expect(wrapper.state("questions")).toHaveLength(1)
     })
 
-    it('should update results in state', () => {
-      expect(wrapper.state('results')).toBe('')
+    it("should update results in state", () => {
+      expect(wrapper.state("results")).toBe("")
       wrapper.instance().validAnswer()
-      expect(wrapper.state('results')).toBe('You got this')
+      expect(wrapper.state("results")).toBe("You got this")
     })
 
   })
 
-  describe('invalid answer', () => {
-    const shiftedQuestion = { question: 'What does html mean',
-    answers: [  'hypertext markup language',
-    'false',
-    'incorrect',
-    'untrue'
+  describe("invalid answer", () => {
+    const shiftedQuestion = { question: "What does html mean",
+    answers: [  "hypertext markup language",
+    "false",
+    "incorrect",
+    "untrue"
       ]
     }
 
-    it('should shift the first question out of question array then push it to the back', () => {
-      expect(wrapper.state('questions')[0]).toEqual(shiftedQuestion)
+    it("should shift the first question out of question array then push it to the back", () => {
+      expect(wrapper.state("questions")[0]).toEqual(shiftedQuestion)
       wrapper.instance().invalidAnswer()
-      expect(wrapper.state('questions')[1]).toEqual(shiftedQuestion)
+      expect(wrapper.state("questions")[1]).toEqual(shiftedQuestion)
     })
 
-    it('should update results in state', () => {
-      expect(wrapper.state('results')).toBe('')
+    it("should update results in state", () => {
+      expect(wrapper.state("results")).toBe("")
       wrapper.instance().invalidAnswer()
-      expect(wrapper.state('results')).toBe('You can do better')
+      expect(wrapper.state("results")).toBe("You can do better")
     })
 
   })

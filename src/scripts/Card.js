@@ -6,10 +6,10 @@ class Card extends Component {
   }
 
  shuffleAnswers(arr) {
-   for (let i = arr.length - 1; i > 0; i--) {
-       const ranNum = Math.floor(Math.random() * (4));
-       [arr[i], arr[ranNum]] = [arr[ranNum], arr[i]];
-   }
+    for (let i = arr.length - 1; i > 0; i--) {
+      const ranNum = Math.floor(Math.random() * (4));
+      [arr[i], arr[ranNum]] = [arr[ranNum], arr[i]];
+    }
   }
 
   getAnswers(shufAns) {

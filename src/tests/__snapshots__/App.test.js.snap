@@ -35,7 +35,7 @@ ShallowWrapper {
             Instructions:
           </h2>
           <p>
-            Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!
+            Welcome to the junior developers handbook. It is a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!
           </p>
         </section>,
         <section
@@ -116,7 +116,7 @@ ShallowWrapper {
               Instructions:
             </h2>,
             <p>
-              Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!
+              Welcome to the junior developers handbook. It is a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!
             </p>,
           ],
           "className": "instructions-sect",
@@ -139,10 +139,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!",
+              "children": "Welcome to the junior developers handbook. It is a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!",
             },
             "ref": null,
-            "rendered": "Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!",
+            "rendered": "Welcome to the junior developers handbook. It is a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!",
             "type": "p",
           },
         ],
@@ -282,7 +282,7 @@ ShallowWrapper {
               Instructions:
             </h2>
             <p>
-              Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!
+              Welcome to the junior developers handbook. It is a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!
             </p>
           </section>,
           <section
@@ -363,7 +363,7 @@ ShallowWrapper {
                 Instructions:
               </h2>,
               <p>
-                Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!
+                Welcome to the junior developers handbook. It is a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!
               </p>,
             ],
             "className": "instructions-sect",
@@ -386,10 +386,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!",
+                "children": "Welcome to the junior developers handbook. It is a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!",
               },
               "ref": null,
-              "rendered": "Welcome to the junior developer's handbook. It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!",
+              "rendered": "Welcome to the junior developers handbook. It is a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!",
               "type": "p",
             },
           ],
