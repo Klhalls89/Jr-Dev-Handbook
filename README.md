@@ -1,7 +1,6 @@
 ## The junior developer's handbook
 
-Welcome to the junior developer's handbook. 
-It's a series of flash cards with terms and ideas you should know. Anything you get right will be taken out of your flashcard deck. Anything you get wrong will be asked again. Start studying!
+Designed to help aspiring front end devlopers learn some basic concepts and terms in an easy to use flash card game. 
 
 Set Up
 Clone this repo git@github.com:Klhalls89/Jr-Dev-Handbook.git
