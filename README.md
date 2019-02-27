@@ -1,6 +1,6 @@
 ## The junior developer's handbook
 
-The junior developer's handbook is designed to help aspiring front end devlopers learn some basic concepts and terms with an easy to use flash card game. Impress your friends and family by know what xml stads for. Enjoy the handbook.
+The junior developer's handbook is designed to help aspiring front end devlopers learn some basic concepts and terms with an easy to use flash card game. Impress your friends and family by know what xml stands for. Enjoy the handbook.
 
 ## Set Up
 Clone this repo git@github.com:Klhalls89/Jr-Dev-Handbook.git
