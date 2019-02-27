@@ -1,8 +1,8 @@
 ## The junior developer's handbook
 
-Designed to help aspiring front end devlopers learn some basic concepts and terms in an easy to use flash card game. 
+The junior developer's handbook is designed to help aspiring front end devlopers learn some basic concepts and terms with an easy to use flash card game. Impress your friends and family by know what xml stads for. Enjoy the handbook.
 
-Set Up
+## Set Up
 Clone this repo git@github.com:Klhalls89/Jr-Dev-Handbook.git
 
 Run npm install in your terminal
